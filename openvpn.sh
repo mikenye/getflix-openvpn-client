@@ -227,7 +227,7 @@ vpn() { local server="$1" user="$2" pass="$3" port="${4:-1194}" proto=${5:-udp}\
     [[ "${AUTH:-}" ]] && echo "auth $AUTH" >>$conf
     echo "tls-client" >>$conf
     echo "remote-cert-tls server" >>$conf
-    echo "comp-lzo" >>$conf
+#    echo "comp-lzo" >>$conf
     echo "verb 1" >>$conf
     echo "reneg-sec 0" >>$conf
     echo "disable-occ" >>$conf
